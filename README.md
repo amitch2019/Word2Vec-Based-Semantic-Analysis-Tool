@@ -100,4 +100,8 @@ This project leverages the advances in natural language processing through word2
 - However, it **can be shared with interested persons upon request.**
 - Please contact me directly to request access to the code.
 
+Contact
+
+For any questions or inquiries, please contact me at [chaubey.amit@gmail.com].
+
 ---
