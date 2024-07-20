@@ -22,42 +22,37 @@ This project leverages the advances in natural language processing through word2
 
 4. **Advanced Visualization**:
    - Optional visualization of word vectors using PCA to project high-dimensional data into 2D space, enhancing understanding of word relationships.
+     
 
-## Technologies Used
+## Technologies and Skills Demonstrated
 
-- **Python**: Core programming language for implementation.
-- **NumPy**: For efficient numerical computations and data storage.
-- **Matplotlib**: For optional visualization of word vectors.
-- **Scikit-learn**: For PCA in visualizing word vectors.
+- **Python**: Core language used for implementation
+- **NumPy**: Efficient numerical computations and array manipulations
+- **Natural Language Processing**: Application of word embeddings for semantic analysis
+- **Data Processing**: Handling and optimizing large datasets
+- **Algorithm Design**: Implementation of similarity and analogy algorithms
+- **Sklearn**: For PCA-based dimensionality reduction
+- **Matplotlib**: For data visualization
 
-## Implementation Details
+  
+## Implementation Highlights
 
-### 1. Data Preprocessing (`save_np.py`)
-- Converts the GloVe word vector text file into a binary format using NumPy for efficient storage and quick loading.
-- Saves the word vectors into `glove.42B.300d.npy` and the vocabulary list into `glove.42B.300d.vocab.txt`.
+1. **Efficient Data Loading**:
+   - Converts 5GB text file to optimized NumPy binary format.
+   - Reduces load time from minutes to seconds.
 
-### 2. Word Similarity and Analogy (`wordsim.py`)
-- **Find Closest Words**:
-    ```python
-    def closest_words(gloves, word, n):
-        """
-        Given a gloves dictionary of word:vector and a word, return the n nearest words
-        based on Euclidean distance between word vectors.
-        """
-    ```
+2. **Smart Vocabulary Management**:
+   - Restricts vocabulary to common words for faster processing without significant loss of functionality.
 
-- **Solve Word Analogies**:
-    ```python
-    def analogies(gloves, x, y, z, n):
-        """
-        Given a gloves dictionary of word:vector and 3 words from
-        "x is to y as z is to _____", return the n best words that fill in the blank.
-        """
-    ```
+3. **Vector Operations**:
+   - Implements Euclidean distance calculations for word similarities.
+   - Utilizes vector arithmetic for analogy completions.
 
-### 3. Command-Line Interface (`wordsim.py`)
-- Main program to interactively query word similarities and analogies from the user.
-- Handles user input, processes the GloVe data, and outputs results in real-time.
+4. **User Interface**:
+   - Interactive command-line interface for word queries and analogies.
+
+5. **Extensibility**:
+   - Optional visualization component for word relationships.
 
 ## Challenges and Solutions
 
