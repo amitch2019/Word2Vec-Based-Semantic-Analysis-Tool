@@ -76,7 +76,7 @@ This project leverages the advances in natural language processing through word2
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/word-similarity-relationships.git
+    git clone https://github.com/amitch2019/word-similarity-relationships.git
     ```
 
 2. **Navigate to the project directory**:
